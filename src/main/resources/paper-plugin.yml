@@ -1,0 +1,13 @@
+name: cmdutils
+version: '1.0-SNAPSHOT'
+main: com.ravijol1.cmdutils.Cmdutils
+api-version: '1.21'
+softdepend:
+  - PlaceholderAPI
+permissions:
+  cmdutils.reload:
+    description: Allows reloading Cmdutils shortcuts
+    default: op
+  cmdutils.sudo:
+    description: Allows executing commands as another player with temporary OP
+    default: op

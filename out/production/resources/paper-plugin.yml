@@ -1,0 +1,6 @@
+name: cmdutils
+version: '1.0-SNAPSHOT'
+main: com.ravijol1.cmdutils.Cmdutils
+api-version: '1.21'
+softdepend:
+  - PlaceholderAPI

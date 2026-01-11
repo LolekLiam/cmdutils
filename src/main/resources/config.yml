@@ -1,0 +1,23 @@
+# Command Shortcuts configuration for CmdUtils
+# Define your shortcuts below. Each top-level key is the command label players will execute in-game.
+# Example:
+# greet:
+#   permision: example.permission  # optional (note: 'permision' spelling supported for compatibility)
+#   playerOnly: false              # optional, default false
+#   usage: "/greet <name>"        # optional
+#   executions:
+#     - { display: "Hello, %%0!" }
+#     - { run: "say Greetings, %%0", as: sender }
+#     - { run: "say Console also greets %%0", as: console }
+#     - { run: "msg %%0 Hi from %%player_name%", as: "player:%%0" }
+#
+# Notes:
+# - Use %%0, %%1, ... to insert arguments provided by the command user.
+# - PlaceholderAPI placeholders (like %player_name%) are supported when a Player context is available.
+# - The 'as' field supports:
+#     sender  -> run as whoever executed the shortcut
+#     console -> run as the server console
+#     player:<name or placeholder or %%i> -> run as a specific online player (looked up by name after replacements)
+# - If 'playerOnly' is true and the sender is not a player, the shortcut returns immediately (no executions).
+# - If 'usage' is set and the user provides no args, the usage will be shown.
+
