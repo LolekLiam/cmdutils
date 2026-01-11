@@ -116,7 +116,7 @@ kms:
 Vanilla `tellraw` requires a valid JSON payload. Use `%%*` to capture the full message.
 ```yaml
 yapp:
-  permission: trust.trusted
+  permission: example.permission
   playerOnly: false
   usage: /yapp <message>
   executions:
@@ -126,7 +126,7 @@ yapp:
 ### Run as a specific player (first arg target, rest as message)
 ```yaml
 yapp_other:
-  permission: trust.trusted
+  permission: example.permission
   executions:
     - { run: 'tellraw @a {"text":"<%player_name%> %%1+"}', as: 'player:%%0' }
 ```
